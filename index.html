@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <title>CICADA</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header__content">
+          <div class="header__logo">
+            <svg
+              width="160"
+              height="26"
+              viewBox="0 0 160 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 13.0175C0 10.6099 0.628722 8.45933 1.88617 6.56592C3.17095 4.64913 4.90677 3.1648 7.09363 2.1129C9.30782 1.03763 11.7817 0.5 14.5153 0.5C17.7136 0.5 20.5155 1.20126 22.921 2.60379C25.3266 4.00631 27.0077 5.94647 27.9645 8.42426H21.3629C20.7068 7.25549 19.7774 6.37891 18.5746 5.79453C17.3992 5.21014 16.0324 4.91795 14.4743 4.91795C12.8068 4.91795 11.317 5.2569 10.0049 5.93478C8.72011 6.58929 7.70868 7.52431 6.97062 8.73983C6.25989 9.95535 5.90452 11.3813 5.90452 13.0175C5.90452 14.6304 6.25989 16.0563 6.97062 17.2952C7.70868 18.5108 8.72011 19.4575 10.0049 20.1353C11.317 20.7899 12.8068 21.1171 14.4743 21.1171C16.0324 21.1171 17.3992 20.8249 18.5746 20.2405C19.7774 19.6328 20.7068 18.7445 21.3629 17.5757H27.9645C27.0077 20.0769 25.3266 22.0288 22.921 23.4313C20.5428 24.8104 17.7409 25.5 14.5153 25.5C11.7817 25.5 9.30782 24.9741 7.09363 23.9222C4.90677 22.8469 3.17095 21.3626 1.88617 19.4691C0.628722 17.5757 0 15.4252 0 13.0175Z"
+                fill="#3F70EF"
+              />
+              <path
+                d="M38.6081 0.815568V25.2896H32.8676V3.77381L35.8261 0.815568H38.6081Z"
+                fill="#3F70EF"
+              />
+              <path
+                d="M42.8856 13.0175C42.8856 10.6099 43.5144 8.45933 44.7718 6.56592C46.0566 4.64913 47.7924 3.1648 49.9793 2.1129C52.1935 1.03763 54.6673 0.5 57.4009 0.5C60.5992 0.5 63.4011 1.20126 65.8067 2.60379C68.2122 4.00631 69.8934 5.94647 70.8501 8.42426H64.2485C63.5925 7.25549 62.663 6.37891 61.4603 5.79453C60.2848 5.21014 58.918 4.91795 57.3599 4.91795C55.6924 4.91795 54.2026 5.2569 52.8905 5.93478C51.6057 6.58929 50.5943 7.52431 49.8563 8.73983C49.1455 9.95535 48.7902 11.3813 48.7902 13.0175C48.7902 14.6304 49.1455 16.0563 49.8563 17.2952C50.5943 18.5108 51.6057 19.4575 52.8905 20.1353C54.2026 20.7899 55.6924 21.1171 57.3599 21.1171C58.918 21.1171 60.2848 20.8249 61.4603 20.2405C62.663 19.6328 63.5925 18.7445 64.2485 17.5757H70.8501C69.8934 20.0769 68.2122 22.0288 65.8067 23.4313C63.4284 24.8104 60.6265 25.5 57.4009 25.5C54.6673 25.5 52.1935 24.9741 49.9793 23.9222C47.7924 22.8469 46.0566 21.3626 44.7718 19.4691C43.5144 17.5757 42.8856 15.4252 42.8856 13.0175Z"
+                fill="#3F70EF"
+              />
+              <path
+                d="M91.7447 16.6992H83.4619L80.0176 25.2896H73.9901L84.282 0.780503H90.9656L101.257 25.2896H95.189L91.7447 16.6992ZM91.7447 16.6992L87.6033 6.46073L83.4619 16.6992H91.7447Z"
+                fill="#3F70EF"
+              />
+              <path
+                d="M115.109 0.815568C118.116 0.815568 120.754 1.31814 123.023 2.32328C125.319 3.32842 127.082 4.76601 128.313 6.63604C129.57 8.4827 130.199 10.6332 130.199 13.0877C130.199 15.5421 129.57 17.6926 128.313 19.5393C127.082 21.3626 125.319 22.7768 123.023 23.7819C120.754 24.7871 118.116 25.2896 115.109 25.2896H105.104V0.815568H115.109ZM114.904 21.1171C117.911 21.1171 120.235 20.4158 121.875 19.0133C123.515 17.6108 124.335 15.6356 124.335 13.0877C124.335 10.5397 123.515 8.55283 121.875 7.12693C120.235 5.67765 117.911 4.95301 114.904 4.95301H110.845V21.1171H114.904Z"
+                fill="#3F70EF"
+              />
+              <path
+                d="M150.487 16.6992H142.204L138.76 25.2896H132.733L143.025 0.780503H149.708L160 25.2896H153.931L150.487 16.6992ZM150.487 16.6992L146.346 6.46073L142.204 16.6992H150.487Z"
+                fill="#3F70EF"
+              />
+              <path
+                d="M87.6522 25.5L84.0375 20.1429H91.2669L87.6522 25.5Z"
+                fill="#3F70EF"
+              />
+              <path
+                d="M146.783 25.5L143.168 20.1429H150.397L146.783 25.5Z"
+                fill="#3F70EF"
+              />
+            </svg>
+          </div>
+          <span class="header__tel">+7-999-999-999</span>
+          <button class="header__button button">Забронировать</button>
+          <div class="header__burger">
+            <svg
+              width="40"
+              height="30"
+              viewBox="0 0 40 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M40 2.5C40 1.83696 39.699 1.20107 39.1632 0.732234C38.6273 0.263393 37.9006 0 37.1429 0H2.85714C2.09938 0 1.37265 0.263393 0.836834 0.732234C0.301016 1.20107 0 1.83696 0 2.5C0 3.16304 0.301016 3.79893 0.836834 4.26777C1.37265 4.73661 2.09938 5 2.85714 5H37.1429C37.9006 5 38.6273 4.73661 39.1632 4.26777C39.699 3.79893 40 3.16304 40 2.5ZM40 15C40 14.337 39.699 13.7011 39.1632 13.2322C38.6273 12.7634 37.9006 12.5 37.1429 12.5H2.85714C2.09938 12.5 1.37265 12.7634 0.836834 13.2322C0.301016 13.7011 0 14.337 0 15C0 15.663 0.301016 16.2989 0.836834 16.7678C1.37265 17.2366 2.09938 17.5 2.85714 17.5H37.1429C37.9006 17.5 38.6273 17.2366 39.1632 16.7678C39.699 16.2989 40 15.663 40 15ZM40 27.5C40 26.837 39.699 26.2011 39.1632 25.7322C38.6273 25.2634 37.9006 25 37.1429 25H20C19.2422 25 18.5155 25.2634 17.9797 25.7322C17.4439 26.2011 17.1429 26.837 17.1429 27.5C17.1429 28.163 17.4439 28.7989 17.9797 29.2678C18.5155 29.7366 19.2422 30 20 30H37.1429C37.9006 30 38.6273 29.7366 39.1632 29.2678C39.699 28.7989 40 28.163 40 27.5Z"
+                fill="#3F70EF"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main__page">
+        <div class="container">
+          <div class="main__page--wrapper">
+            <div class="main__page--content">
+              <div class="main__content--title">Figma с нуля до PRO</div>
+              <div class="main__content--subtitle">
+                Освойте самую популярную программу для дизайнеров на
+                профессиональном уровне. Научитесь создавать интерактивные
+                прототипы, дизайн-макеты, экономить свое и чужое время
+              </div>
+              <div class="main__page--butoon button">Записаться на курс</div>
+            </div>
+            <div class="main__page--image">
+              <svg
+                width="542"
+                height="511"
+                viewBox="0 0 542 511"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M71.9995 0C66.4767 0 61.9995 4.47715 61.9995 10V299C61.9995 304.523 66.4767 309 71.9995 309H243V163C243 151.954 251.954 143 263 143H317V10C317 4.47715 312.522 0 307 0H71.9995Z"
+                  fill="#FF8282"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M532 472C537.523 472 542 467.523 542 462L542 173C542 167.477 537.523 163 532 163L317 163C311.477 163 307 167.477 307 173L307 309C307 320.046 298.046 329 287 329L243 329C237.477 329 233 333.477 233 339L233 462C233 467.523 237.477 472 243 472L532 472Z"
+                  fill="#23CAFF"
+                />
+                <rect
+                  x="29.9995"
+                  y="40"
+                  width="249"
+                  height="349"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <rect
+                  x="227.5"
+                  y="447.5"
+                  width="42"
+                  height="61"
+                  stroke="white"
+                  stroke-width="5"
+                />
+                <rect
+                  x="0.5"
+                  y="29.5"
+                  width="189"
+                  height="57"
+                  fill="white"
+                  stroke="#454545"
+                />
+                <rect
+                  x="369.858"
+                  y="319.815"
+                  width="32.2826"
+                  height="54.2935"
+                  fill="#454545"
+                />
+                <rect
+                  x="253.5"
+                  y="156.5"
+                  width="265"
+                  height="160.815"
+                  rx="7.5"
+                  fill="white"
+                  stroke="#454545"
+                  stroke-width="5"
+                />
+                <path
+                  d="M413.88 374.109L413.88 376.31L359.586 376.31L359.586 374.109L413.88 374.109Z"
+                  fill="#454545"
+                />
+                <rect
+                  x="328.771"
+                  y="178.946"
+                  width="114.457"
+                  height="114.457"
+                  fill="url(#pattern0)"
+                />
+                <mask
+                  id="mask0_303_414"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="311"
+                  y="360"
+                  width="121"
+                  height="99"
+                >
+                  <rect
+                    width="120"
+                    height="99"
+                    transform="matrix(-1 0 0 1 432 360)"
+                    fill="url(#pattern1)"
+                  />
+                </mask>
+                <g mask="url(#mask0_303_414)">
+                  <rect
+                    width="120"
+                    height="99"
+                    transform="matrix(-1 0 0 1 432 360)"
+                    fill="#454545"
+                  />
+                </g>
+                <mask
+                  id="mask1_303_414"
+                  style="mask-type: alpha"
+                  maskUnits="userSpaceOnUse"
+                  x="437"
+                  y="403"
+                  width="35"
+                  height="35"
+                >
+                  <rect
+                    width="35"
+                    height="35"
+                    transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 472 403)"
+                    fill="url(#pattern2)"
+                  />
+                </mask>
+                <g mask="url(#mask1_303_414)">
+                  <rect
+                    width="34.4517"
+                    height="34.4517"
+                    transform="matrix(-1 -8.74228e-08 -8.74228e-08 1 472.871 403.459)"
+                    fill="#454545"
+                  />
+                </g>
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_303_414"
+                      transform="scale(0.00195312)"
+                    />
+                  </pattern>
+                  <pattern
+                    id="pattern1"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image1_303_414"
+                      transform="matrix(0.00195312 0 0 0.00236742 0 -0.106061)"
+                    />
+                  </pattern>
+                  <pattern
+                    id="pattern2"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image2_303_414"
+                      transform="scale(0.00195312)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_303_414"
+                    width="512"
+                    height="512"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                  <image
+                    id="image1_303_414"
+                    width="512"
+                    height="512"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                  <image
+                    id="image2_303_414"
+                    width="512"
+                    height="512"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+              <div class="main__before-figma">Figma</div>
+              <div class="main__after-website">
+                <ul>
+                  <li>Websites</li>
+                  <li>Graphic</li>
+                  <li>Design</li>
+                </ul>
+              </div>
+              <span class="main__span">Авторский курс от CICADA ACADEMY </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="studying">
+        <div class="container">
+          <div class="studying__title title">О профессии</div>
+          <div class="studying__wrapper">
+            <div class="studying__wrappper-left">
+              <div class="studying__info">
+                <svg
+                  width="40"
+                  height="48"
+                  viewBox="0 0 40 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.8629 39.6589C33.5585 37.4727 40 29.558 40 20.129C40 9.01208 31.0457 0 20 0C8.95431 0 1.13858e-05 9.01208 1.13858e-05 20.129C1.13858e-05 20.6647 0.0207967 21.1954 0.0615999 21.7204L5.05048e-06 21.6772L0 48L24.8629 39.6589Z"
+                    fill="#23CAFF"
+                  />
+                </svg>
+                <div class="studying__info-cart">
+                  <div class="studying__info-cart--text">
+                    Figma является одним из самых популярных и востребованных
+                    графических редакторов для web и UI/UX дизайнеров
+                  </div>
+                  <div class="studying__info-icons">
+                    <div class="studying__info-icons--reaction">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 13C7 13 8.5 15 11 15C13.5 15 15 13 15 13"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 8H8.01042"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14 8H14.0104"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 14.9994C13.2091 14.9994 15 13.2085 15 10.9994C15 8.79025 13.2091 6.99939 11 6.99939C8.79086 6.99939 7 8.79025 7 10.9994C7 13.2085 8.79086 14.9994 11 14.9994Z"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 6.99938V11.9994C15 12.795 15.3161 13.5581 15.8787 14.1207C16.4413 14.6833 17.2044 14.9994 18 14.9994C18.7957 14.9994 19.5587 14.6833 20.1213 14.1207C20.6839 13.5581 21 12.795 21 11.9994V10.9994C20.9999 8.74241 20.2362 6.55186 18.8333 4.78391C17.4303 3.01596 15.4706 1.7746 13.2726 1.26168C11.0747 0.748749 8.76794 0.994421 6.72736 1.95875C4.68677 2.92307 3.03241 4.54933 2.03327 6.5731C1.03413 8.59687 0.748975 10.8991 1.22418 13.1055C1.69938 15.3119 2.90699 17.2926 4.65064 18.7256C6.39429 20.1587 8.57144 20.9597 10.8281 20.9985C13.0847 21.0373 15.2881 20.3116 17.08 18.9394"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="studying__info-icons--action">
+                      <svg
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14.5" cy="14.5" r="14.5" fill="#23CAFF" />
+                        <path
+                          d="M21 12.07L14.5 6L8 12.07M14.5 23V6.17"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="studying__info">
+                <svg
+                  width="40"
+                  height="48"
+                  viewBox="0 0 40 48"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M24.8629 39.6589C33.5585 37.4727 40 29.558 40 20.129C40 9.01208 31.0457 0 20 0C8.95431 0 1.13858e-05 9.01208 1.13858e-05 20.129C1.13858e-05 20.6647 0.0207967 21.1954 0.0615999 21.7204L5.05048e-06 21.6772L0 48L24.8629 39.6589Z"
+                    fill="#23CAFF"
+                  />
+                </svg>
+                <div class="studying__info-cart">
+                  <div class="studying__info-cart--text">
+                    В среднем, специалисты со знанием Figma зарабатывают от 60
+                    000 рублей
+                  </div>
+                  <div class="studying__info-icons">
+                    <div class="studying__info-icons--reaction">
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M7 13C7 13 8.5 15 11 15C13.5 15 15 13 15 13"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M8 8H8.01042"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M14 8H14.0104"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M11 14.9994C13.2091 14.9994 15 13.2085 15 10.9994C15 8.79025 13.2091 6.99939 11 6.99939C8.79086 6.99939 7 8.79025 7 10.9994C7 13.2085 8.79086 14.9994 11 14.9994Z"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <path
+                          d="M15 6.99938V11.9994C15 12.795 15.3161 13.5581 15.8787 14.1207C16.4413 14.6833 17.2044 14.9994 18 14.9994C18.7957 14.9994 19.5587 14.6833 20.1213 14.1207C20.6839 13.5581 21 12.795 21 11.9994V10.9994C20.9999 8.74241 20.2362 6.55186 18.8333 4.78391C17.4303 3.01596 15.4706 1.7746 13.2726 1.26168C11.0747 0.748749 8.76794 0.994421 6.72736 1.95875C4.68677 2.92307 3.03241 4.54933 2.03327 6.5731C1.03413 8.59687 0.748975 10.8991 1.22418 13.1055C1.69938 15.3119 2.90699 17.2926 4.65064 18.7256C6.39429 20.1587 8.57144 20.9597 10.8281 20.9985C13.0847 21.0373 15.2881 20.3116 17.08 18.9394"
+                          stroke="#454545"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                    <div class="studying__info-icons--action">
+                      <svg
+                        width="29"
+                        height="29"
+                        viewBox="0 0 29 29"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <circle cx="14.5" cy="14.5" r="14.5" fill="#23CAFF" />
+                        <path
+                          d="M21 12.07L14.5 6L8 12.07M14.5 23V6.17"
+                          stroke="white"
+                          stroke-width="2"
+                          stroke-miterlimit="10"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="studying__wrappper-right">
+                <div class="studying__info">
+                    <svg
+                      width="40"
+                      height="48"
+                      viewBox="0 0 40 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24.8629 39.6589C33.5585 37.4727 40 29.558 40 20.129C40 9.01208 31.0457 0 20 0C8.95431 0 1.13858e-05 9.01208 1.13858e-05 20.129C1.13858e-05 20.6647 0.0207967 21.1954 0.0615999 21.7204L5.05048e-06 21.6772L0 48L24.8629 39.6589Z"
+                        fill="#23CAFF"
+                      />
+                    </svg>
+                    <div class="studying__info-cart">
+                      <div class="studying__info-cart--text">
+                        В ней можно быстро создавать интерфейс приложений, сайты, постеры и многое другое
+                      </div>
+                      <div class="studying__info-icons">
+                        <div class="studying__info-icons--reaction">
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11 21C16.5228 21 21 16.5228 21 11C21 5.47715 16.5228 1 11 1C5.47715 1 1 5.47715 1 11C1 16.5228 5.47715 21 11 21Z"
+                              stroke="#454545"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M7 13C7 13 8.5 15 11 15C13.5 15 15 13 15 13"
+                              stroke="#454545"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M8 8H8.01042"
+                              stroke="#454545"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M14 8H14.0104"
+                              stroke="#454545"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                          <svg
+                            width="22"
+                            height="22"
+                            viewBox="0 0 22 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11 14.9994C13.2091 14.9994 15 13.2085 15 10.9994C15 8.79025 13.2091 6.99939 11 6.99939C8.79086 6.99939 7 8.79025 7 10.9994C7 13.2085 8.79086 14.9994 11 14.9994Z"
+                              stroke="#454545"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                            <path
+                              d="M15 6.99938V11.9994C15 12.795 15.3161 13.5581 15.8787 14.1207C16.4413 14.6833 17.2044 14.9994 18 14.9994C18.7957 14.9994 19.5587 14.6833 20.1213 14.1207C20.6839 13.5581 21 12.795 21 11.9994V10.9994C20.9999 8.74241 20.2362 6.55186 18.8333 4.78391C17.4303 3.01596 15.4706 1.7746 13.2726 1.26168C11.0747 0.748749 8.76794 0.994421 6.72736 1.95875C4.68677 2.92307 3.03241 4.54933 2.03327 6.5731C1.03413 8.59687 0.748975 10.8991 1.22418 13.1055C1.69938 15.3119 2.90699 17.2926 4.65064 18.7256C6.39429 20.1587 8.57144 20.9597 10.8281 20.9985C13.0847 21.0373 15.2881 20.3116 17.08 18.9394"
+                              stroke="#454545"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="studying__info-icons--action">
+                          <svg
+                            width="29"
+                            height="29"
+                            viewBox="0 0 29 29"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle cx="14.5" cy="14.5" r="14.5" fill="#23CAFF" />
+                            <path
+                              d="M21 12.07L14.5 6L8 12.07M14.5 23V6.17"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-miterlimit="10"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                <div class="studying__info studying__info--last">
+                    <svg
+                      width="40"
+                      height="48"
+                      viewBox="0 0 40 48"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M24.8629 39.6589C33.5585 37.4727 40 29.558 40 20.129C40 9.01208 31.0457 0 20 0C8.95431 0 1.13858e-05 9.01208 1.13858e-05 20.129C1.13858e-05 20.6647 0.0207967 21.1954 0.0615999 21.7204L5.05048e-06 21.6772L0 48L24.8629 39.6589Z"
+                        fill="#23CAFF"
+                      />
+                    </svg>
+                    <div class="studying__info-cart studying__info-cart--last">
+                      <input class=" studying__info-cart--text-last" placeholder="Add a comment">
+                        
+                      </input>
+                      <div class="studying__info-icons">
+                        <div class="studying__info-icons--action studying__info-icons--actionlast">
+                            <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <ellipse cx="14.5" cy="14.5" rx="14.5" ry="14.5" fill="#B7B6B6"/>
+                                <path d="M21 12.07L14.5 6L8 12.07M14.5 23V6.17" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="surface">
+        <div class="container">
+          <div class="surface__title title">Кому подойдет</div>
+          <div class="surface__subtitle">Начните обучение если вы:</div>
+          <div class="surface__wrapper">
+            <div class="surface__wrapper-top">
+              <div class="surface__wrapper-card--one">
+                <div class="card__image card__image1">
+                  <img src="images/surface1.jpg" alt="">
+                </div>
+                <span>Frame 1</span>
+                <div class="frame1 surface__frame"></div>
+                <p class="frame1__text frame__text">Еще не определились, чем именно  хотите заниматься в программе, но имеете огромное желание ее изучить</p>
+                <button class="frame__size">382x108</button>
+              </div>              
+              <div class="surface__wrapper-card--two">
+                <div class="card__image card__image2">
+                  <img src="images/surface2.jpg" alt="">
+                </div>
+                <span>Frame 2</span>
+                <div class="frame2 surface__frame"></div>
+                <p class="frame2__text frame__text">Являетесь специалистом в конкретной сфере и хотите повысить свою квалификацию</p>
+                <button class="frame__size">387x108</button>
+              </div>              
+            </div>
+            <div class="surface__wrapper-bottom">
+              <div class="surface__wrapper-card--one">
+                <div class="card__image card__image1">
+                  <img src="images/surface3.jpg" alt="">
+                </div>
+                <span>Frame 3</span>
+                <div class="frame3 surface__frame"></div>
+                <p class="frame1__text frame__text">Уже знакомы с интерфейсом и вам хочется усилить свои знания, выделить силы для конкретного направления</p>
+                <button class="frame__size">382x108</button>
+              </div>              
+              <div class="surface__wrapper-card--two">
+                
+                <span>Frame 4</span>
+                <div class="frame4 surface__frame"></div>
+                <p class="frame2__text frame__text">В процессе узнаете все необходимое 
+                  для комфортной работы с программой. Научитесь решать самые креативные и нестандартные задачи</p>
+                <button class="frame__size">387x134</button>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="learn">
+        <div class="learn__wrapper">
+          <div class="learn__section container">
+            <div class="learn__title title">Что вы освоите </div>
+            <img class="learn__title-line"  src="images/Penlinesvg.svg" alt="">
+
+            <div class="learn__cards">
+              <div class="learn__left">
+              <div class="learn__card">
+                  <div class="learn__subtitle">Навыки работы в Figma</div>
+                  <p class="learn__text">Изучите весь интерфейс программы. Научитесь работать с фигурами, слоями и другими элементами</p>
+                </div>
+              
+              <img class="learn__text-line" src="images/Penline2svg.svg" alt="">
+              <div class="learn__card">
+                
+                  <div class="learn__subtitle">Создание адаптивов</div>
+                  <p class="learn__text">Научитесь разрабатывать прототипы и адаптировать их для разных устройств</p>
+                
+              </div>
+            </div>
+              <div class="learn__right">
+                <div class="learn__card">
+                  
+                    <div class="learn__subtitle">Интерактивные макеты</div>
+                    <p class="learn__text text__bottom">Ознакомитесь с базовой и продвинутой анимацией. С помощью нее, научитесь показывать заказчику, 
+                      как будет выглядеть web-версия продукта</p>
+                  
+                </div>
+                <div class="learn__card">
+                  
+                    <div class="learn__subtitle">Передавать макет на верстку</div>
+                    <p class="learn__text">Научитесь планировать свое рабочее пространство в макете. Освоите навыки взаимодействия 
+                      с разработчиками, которые будут работать 
+                      по вашим макетам </p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about">
+        <div class="about__wrapper">
+          <div class="container">
+            <div class="about__title title">Что такое CICADA ACADEMY</div>
+              <div class="about__block">
+                <div class="about__info">
+                <div class="about__texts">
+                  <p class="about__text1">CICADA ACADEMY является одной из самых популярных площадок для получения знаний по всему СНГ. В число спикеров входят топовые эксперты в различных сферах: бизнес, маркетинг, дизайн, SMM и многое другое</p>
+                  <p class="about__text2">Вместе с профессиональными педагогами и ответственными кураторами мы поможем вам прийти к реальному результату</p>
+                </div>
+                <button class="about__button button">Записаться на курс</button>
+                </div>
+                <div class="about__imagebox">
+                  <div class="about__imagebox-content">
+                    <img class="about__image" src="images/aboutimage.jpg" alt="">
+                    <button class="frame__size">362x246</button>
+                    <p class="about__imagebox-text">Практика на наших курсах полностью идентична реальным рабочим задачам.</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section class="program">
+        <div class="container">
+          <div class="program__wrapper">
+            <div class="program__title title">Программа обучения </div>
+            <ul class="programm__acc" id="accordeon">
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head programm__acc-link--active">
+                    <span>Page 1</span>Навыки работы с Figma 
+                  </div>
+                  <div class="programm__acc-text" style="display: none;" >
+                    <p>Освоите базовые и продвинутые принципы работы с интерфейсом.</p>
+                  </div>
+                </a>
+              </li>
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head">
+                    <span>Page 2</span>Изображения и иконки
+                  </div>
+                  <p class="programm__acc-text" style="display: none;" >
+                    Научитесь обрабатывать изображения, используя весь функионал
+Figma. Получите навык работы без использования других редакторов 
+                  </p>
+                </a>
+              </li>
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head">
+                    <span>Page 3</span>Библиотеки и стили
+                  </div>
+                  <p class="programm__acc-text" style="display: none;" >
+                    Освоите навык создания библиотек и стилей, для упрощения работы в программе. Научитесь создавать макеты с модульной сеткой
+                  </p>
+                </a>
+              </li>
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head">
+                    <span>Page 4</span>Components,  Auto Layout, Variants
+                  </div>
+                  <p class="programm__acc-text" style="display: none;">
+                    Получите навык работы с этими необходимыми инструментами, которые в значительной степени ускоряют работу дизайнера и помогают быстро адаптировать элементы интерфейса
+                  </p>
+                </a>
+              </li>
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head">
+                    <span>Page 5</span>Анимация и прототипирование
+                  </div>
+                  <p class="programm__acc-text" style="display: none;" >
+                    Научитесь создавать базовую и продвинутую анимацию для создания интерактивных макетов, которые позволят показывать заказчикам будущий функционал продукта
+                  </p>
+                </a>
+              </li>
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head">
+                    <span>Page 6</span>Адаптивы и многостраничные проекты 
+                  </div>
+                  <p class="programm__acc-text" style="display: none;" >
+                    Научитесь работать с деревом страниц. Освоите функционал Branches для командной работы над проектом
+                  </p>
+                </a>
+              </li>
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head">
+                    <span>Page 7</span>Подготовка макета для верстки
+                  </div>
+                  <p class="programm__acc-text" style="display: none;" >
+                    Научитесь грамотно подготавливать макет для передачи разработчикам и взаимодействовать с ними в процессе работы
+                  </p>
+                </a>
+              </li>
+              <li class="programm__acc-item">
+                <a class="programm__acc-link" href="javascript:void(0)">
+                  <div class="program__acc-link"></div>
+                  <div class="programm__acc-head">
+                    <span>Page 8</span>Портфолио и поиск работы 
+                  </div>
+                  <p class="programm__acc-text" style="display: none;" >
+                    Поймете принципы трудоустройства, научитесь писать грамотное сопроводительное письмо. Поможем вам найти ваш первый проект
+                  </p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="teachers">
+        <div class="container">
+          <div class="teachers__title title">Преподаватели курса</div>
+          <div class="teachers__tools-bar"></div>
+          <img src="images/teachersTools.svg" alt="" class="teachers__tools-img">
+          <img class="teachers__border" src="images/teachers__border.png" alt="">
+          <p class="teachers__tools-text">Начните обучение вместе с профессионалами своего дела, которые точно знают, как довести вас из точки A к точке B</p>
+          <div class="teachers__wrappers"> 
+            <div class="teachers__wrapper__woman">
+              <img src="images/teachersWoman.png" class="teachers__woman" alt="">
+              <div class="teacher__name">Морозова Ева</div>
+              <div class="teacher__info">
+                <ul class="teacher__info-ul">
+                  <li>Дизайнер с 7 летним стажем </li>
+                  <li>Работала с  Nike, Lamoda, Coca Cola</li>
+                  <li>10 номинаций Awwwards</li>
+                  <li>5 наград CSSDA</li>
+                </ul>
+                <p class="teacher__speak">Ева точно знает, как создавать грамотный 
+                  и эстетичный дизайн. Вместе с ней вы пройдете путь от новичка до уверенного пользователя</p>
+              </div>
+            </div>
+            <div class="teachers__wrapper">
+              <img src="images/teachersMan.png" class="teachers__man" alt="">
+              <div class="teacher__name">Бондарев Игорь</div>
+              <div class="teacher__info">
+                <ul class="teacher__info-ul" >
+                  <li>Основатель digital-агенства PixelPerfect</li>
+                  <li>Art и CEO директор с опытом более 10 лет</li>
+                  <li>Работал с Альфабанк, Роскосмос, Газпромбанк</li>
+                  <li>Предприниматель и маркетолог</li>
+                </ul>
+                <p class="teacher__speak">Игорь имеет огромный опыт за плечами своей карьеры. Он разбирается во всех тонкостях своего ремесла. С ним вы точно придете к цели</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <div class="container">
+          <div class="price__title title">Стоимость курса</div>
+          <div class="price__cards">
+            <div class="price__card">
+              <div class="teacher__name price__name">START</div>
+                <div class="price__info">
+                  <div class="price__subtitle1 price__subtitle">8.999 рублей</div>
+                  <ul class="teacher__info-ul">
+                    <li>Доступ ко всем модулям на 1 год</li>
+                    <li>Еженедельные стримы с преподавателями</li>
+                    <li class="price__unlock">Проверка дз кураторами</li>
+                    <li class="price__unlock">Telegram-чат с учениками потока</li>
+                    <li class="price__unlock">Диплом об окончании обучения</li>
+                    <li class="price__unlock">Мастер-группы по 5 человек по 1 разу 
+                      в неделю с преподавателями курса</li>
+                    <li class="price__unlock">Помощь с портфолио и трудоустройством</li>
+                    <li class="price__unlock">5 личных занятий с Евой и Игорем</li>
+                    <li class="price__unlock">Преподаватели сами найдут для вас первый 
+                      реальный проект</li>
+                  </ul>
+                  <button class="price__button button">Записаться на курс</button>
+                </div>
+            </div>
+            <div class="price__card">
+              <div class="teacher__name price__name">INTERN</div>
+                <div class="price__info">
+                  <div class="price__subtitle2 price__subtitle">16.999 рублей</div>
+                  <ul class="teacher__info-ul">
+                    <li>Доступ ко всем модулям на 1 год</li>
+                    <li>Еженедельные стримы с преподавателями</li>
+                    <li>Проверка дз кураторами</li>
+                    <li>Telegram-чат с учениками потока</li>
+                    <li>Диплом об окончании обучения</li>
+                    <li class="price__unlock">Мастер-группы по 5 человек по 1 разу 
+                      в неделю с преподавателями курса</li>
+                    <li class="price__unlock">Помощь с портфолио и трудоустройством</li>
+                    <li class="price__unlock">5 личных занятий с Евой и Игорем</li>
+                    <li class="price__unlock">Преподаватели сами найдут для вас первый 
+                      реальный проект</li>
+                  </ul>
+                  <button class="price__button button">Записаться на курс</button>
+                </div>
+            </div>
+          </div>
+          <div class="price__cards">
+            <div class="price__card">
+              <div class="teacher__name price__name">FIGMA PRO</div>
+                <div class="price__info">
+                  <div class="price__subtitle3 price__subtitle">20.999 рублей</div>
+                  <ul class="teacher__info-ul">
+                    <li>Доступ ко всем модулям на 1 год</li>
+                    <li>Еженедельные стримы с преподавателями</li>
+                    <li>Проверка дз кураторами</li>
+                    <li>Telegram-чат с учениками потока</li>
+                    <li>Диплом об окончании обучения</li>
+                    <li>Мастер-группы по 5 человек по 1 разу 
+                      в неделю с преподавателями курса</li>
+                    <li>Помощь с портфолио и трудоустройством</li>
+                    <li class="price__unlock">5 личных занятий с Евой и Игорем</li>
+                    <li class="price__unlock">Преподаватели сами найдут для вас первый 
+                      реальный проект</li>
+                  </ul>
+                  <button class="price__button button">Записаться на курс</button>
+                </div>
+            </div>
+            <div class="price__card">
+              <div class="teacher__name price__name">FIGMA VIP</div>
+                <div class="price__info">
+                  <div class="price__subtitle4 price__subtitle">39.999 рублей</div>
+                  <ul class="teacher__info-ul">
+                    <li>Доступ ко всем модулям на 1 год</li>
+                    <li>Еженедельные стримы с преподавателями</li>
+                    <li>Проверка дз кураторами</li>
+                    <li>Telegram-чат с учениками потока</li>
+                    <li>Диплом об окончании обучения</li>
+                    <li>Мастер-группы по 5 человек по 1 разу 
+                      в неделю с преподавателями курса</li>
+                    <li>Помощь с портфолио и трудоустройством</li>
+                    <li class="price__gift">5 личных занятий с Евой и Игорем</li>
+                    <li class="price__gift">Преподаватели сами найдут для вас первый 
+                      реальный проект</li>
+                  </ul>
+                  <button class="price__button button">Записаться на курс</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="marks">
+        <div class="container">
+          <div class="marks__title title">Отзывы учеников</div>
+          <div class="marks__wrapper">
+            <div class="mark__cards">
+              <div class="marks__card">
+                <img class="marks__sub" src="images/markSub1.svg" alt="">
+                <p class="mark__card-text">Когда я начала обучение в CICADA, было очень
+                  много сомнений, касательно моего будущего.
+                  После завершения курса, мне помогли найти
+                  мою первую стажировку в крупном агенстве.
+                  Спустя время, я смогла войти в состав команды
+                  Хочу выразить свою благодарность академии 
+                  и замечательным преподавателям: Еве и Игорю!</p>
+                  <div class="marks__card-people">
+                    <img src="images/markPeop1.jpg" alt="">
+                    <div class="marks__card--info">
+                      <p class="people__name">Карина Краюхина</p>
+                      <p class="people__position">Млаший web-designer в агенстве AWG</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="marks__card">
+                <img class="marks__sub" src="images/markSub2.svg" alt="">
+                <p class="mark__card-text">Закончив обучение в академии, я приобрел много полезных знаний, которые помогают мне зарабатывать удаленно из любой точки мира. В скором будущем, с учетом полученной базы, планирую повышать квалификацию и уходить работать в полноценное агенство  </p>
+                  <div class="marks__card-people">
+                    <img src="images/markPeop2.jpg" alt="">
+                    <div class="marks__card--info">
+                      <p class="people__name">Артем Магизов</p>
+                      <p class="people__position">Стажер в  агенстве NICE</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="mark__cards">
+              <div class="marks__card">
+                <img class="marks__sub" src="images/markSub3.svg" alt="">
+                <p class="mark__card-text">С CICADA я познакомился еще в студенческие годы. После пар я активно посвящал время обучению в академии. Теперь я являюсь самостоятельным специалистом, который 
+                  может зарабатывать деньги удаленно</p>
+                  <div class="marks__card-people">
+                    <img src="images/markPeop3.jpg" alt="">
+                    <div class="marks__card--info">
+                      <p class="people__name">Марк Мусин</p>
+                      <p class="people__position">Web-designer фрилансер</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="marks__card">
+                <img class="marks__sub" src="images/markSub4.svg" alt="">
+                <p class="mark__card-text">Я очень скептически относилась к онлайн образованию. VIP тариф позволил мне раскрыть свой потенциал и найти дело своей мечты. Теперь я UI/UX специалист с очень широким спектром возможностей</p>
+                  <div class="marks__card-people">
+                    <img src="images/markPeop4.jpg" alt="">
+                    <div class="marks__card--info">
+                      <p class="people__name">Ангелина Степанова</p>
+                      <p class="people__position">UI/UX designer в агенстве Игоря</p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="faq__title title">Часто задаваемые вопросы</div>
+          <img src="images/faq__decor.svg" alt="">
+          <ul class="faq__acc" id="accordeon">
+            <li class="faq__acc-item">
+              <a class="faq__acc-link" href="javascript:void(0)">
+                <div class="faq__acc-link"></div>
+                <div class="faq__acc-head programm__acc-link--active">
+                  <p>Я никогда не работал в  Figma. Смогу ли освоить?</>
+                </div>
+                <div class="faq__acc-text" style="display: none;" >
+                  <p>Да! К нам на обучения приходят люди, которые никогда в жизни 
+                    не работали с графическими приложениями. Тем не менее, они спокойно осваивают программу</p>
+                </div>
+              </a>
+            </li>
+            <li class="faq__acc-item">
+              <a class="faq__acc-link" href="javascript:void(0)">
+                <div class="faq__acc-link"></div>
+                <div class="faq__acc-head">
+                  <p>Можно ли совмещать курс с работой или учебой?</p>
+                </div>
+                <p class="faq__acc-text" style="display: none;" >
+                  Студенты нашей академии учатся в ВУЗах, работают и совмещают обучение на курсах. Вы легко можете совмещать учебу со своей основной деятельностью
+                </p>
+              </a>
+            </li>
+            <li class="faq__acc-item">
+              <a class="faq__acc-link" href="javascript:void(0)">
+                <div class="faq__acc-link"></div>
+                <div class="faq__acc-head">
+                  <p>Сколько часов в неделю необходимо уделять Figma?</p>
+                </div>
+                <p class="faq__acc-text" style="display: none;" >
+                  Наши студенты уделяют, в среднем, 4-5 часов в неделю
+                </p>
+              </a>
+            </li>
+            <li class="faq__acc-item">
+              <a class="faq__acc-link" href="javascript:void(0)">
+                <div class="faq__acc-link"></div>
+                <div class="faq__acc-head">
+                  <p>Что такое мастер-группа?</p>
+                </div>
+                <p class="faq__acc-text" style="display: none;">
+                  Мастер-группы это маленькие команды по 5 человек, которые имеют возможность получить дополнительные учебные часы, занимаясь с преподавателями раз в неделю с дополнительной практикой
+                </p>
+              </a>
+            </li>
+            <li class="faq__acc-item">
+              <a class="faq__acc-link" href="javascript:void(0)">
+                <div class="faq__acc-link"></div>
+                <div class="faq__acc-head">
+                  <p>Можно ли оплатить курс частями?</p>
+                </div>
+                <p class="programm__acc-text" style="display: none;" >
+                  Можно, вы можете оформить рассрочку и разделить оплату обучения
+                </p>
+              </a>
+            </li>
+            <li class="faq__acc-item">
+              <a class="faq__acc-link" href="javascript:void(0)">
+                <div class="faq__acc-link"></div>
+                <div class="faq__acc-head">
+                  <p>Все ли ученики находят работу и проекты после курса?</p>
+                </div>
+                <p class="faq__acc-text" style="display: none;" >
+                  Если вы будете выполнять все задания и следовать рекомендациям преподавателей, вы сможете найти свой первый проект уже во время обучения
+                </p>
+              </a>
+              <div class="faq__acc-link"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="choise">
+        <div class="container">
+          <div class="choise__wrapper">
+            <div class="choise__content">
+              <div class="choise__title title">Уже сделал выбор?</div>
+              <div class="choise__subtitle">Тогда ждем тебя в нашей академии</div>
+              <button class="choise__button button">ЗАПИСАТЬСЯ НА КУРС</button>
+            </div>
+            <div class="choise__image">
+              <img src="images/choiseimg.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__content">
+            <img src="images/Footerlogo.svg" alt="">
+            <ul class="footer__list">
+              <li>ПРАВОВЫЕ ДОКУМЕНТЫ</li>
+              <li>Сайт создан в учебных целях</li>
+              <li>Разработка сайта:</li>
+              <li>Rinat Defflay</li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+      </div>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <script
+    type="text/javascript"
+    src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+  <script src="js/script.js"></script>
+
+  <script src="js/mixitup.min.js"></script>
+  </body>
+</html>
